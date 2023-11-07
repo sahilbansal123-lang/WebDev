@@ -36,22 +36,15 @@ p {
 }
 
 .channel-image {
-    width: 100%;
-    border-radius: 40px;
+    width: 40px;
+    border-radius: 50px;
 }
 
 .thumbnail-row {
     margin-bottom: 12px;
-
 }
 
-.channel-picture {
-    width: 40px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.video-info {
-    display: inline-block;
-    width: 240px;
+.video-Info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
