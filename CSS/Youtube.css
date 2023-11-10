@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .search-bar {
@@ -61,8 +62,9 @@ body {
 }
 
 .left-header {
-    background-color: lightblue;
-    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .middle-header {
     margin-left: 60px;
@@ -70,7 +72,8 @@ body {
     background-color: lightpink;
     flex: 1;
     max-width: 500px;
-    
+    display: flex;
+    flex-direction: row;
 }
 .right-header {
     background-color: lightblue;
