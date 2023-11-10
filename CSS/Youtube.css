@@ -109,3 +109,12 @@ body {
     justify-content: space-between;
     flex-shrink: 0;
 }
+
+.sidebar {
+    position: fixed;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 70px;
+}
