@@ -7,8 +7,7 @@
     <title>FlexBox</title>
 </head>
 
-<body 
-style="padding-bottom: 1000px;">
+<body style="padding-bottom: 1000px;">
     <div style="
         display: flex;
         flex-direction: row;   
@@ -50,6 +49,7 @@ style="padding-bottom: 1000px;">
         height: 70px;
         border-width: 1px;
         border-style: solid;  
+        justify-content: start;
     ">
         <div style="
             background-color: blue;
@@ -59,15 +59,45 @@ style="padding-bottom: 1000px;">
         </div>
         <div style="
             background-color: pink;
-            flex: 1;
+            width: 100px;
         ">
-            flex 1
+            100px
         </div>
         <div style="
             background-color: blue;
-            flex: 2;
+            width: 100px;
         ">
-            flex 2
+            100px
+        </div>
+    </div>
+
+    <!-- FlexBox 2-->
+    <div style="
+        display: flex;
+        flex-direction: row;  
+        margin-top: 30px; 
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;  
+        justify-content: space-between;
+    ">
+        <div style="
+            background-color: blue;
+            width: 100px;
+        ">
+            100px
+        </div>
+        <div style="
+            background-color: pink;
+            width: 100px;
+        ">
+            100px
+        </div>
+        <div style="
+            background-color: blue;
+            width: 100px;
+        ">
+            100px
         </div>
     </div>
 </body>
