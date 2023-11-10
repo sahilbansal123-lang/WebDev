@@ -46,6 +46,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
+    justify-content: space-between;
 }
 
 .header {
@@ -59,6 +60,21 @@ body {
 .search-bar {
     font-size: 20px;
     display: block;
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Arial;
+    font-size: 16px;
 }
 
 .left-header {
@@ -69,13 +85,19 @@ body {
 .middle-header {
     margin-left: 60px;
     margin-right: 35px;
-    background-color: lightpink;
     flex: 1;
     max-width: 500px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
 }
 .right-header {
-    background-color: lightblue;
-    width: 200px;
+    flex-direction: row;
+    display: flex;
+    width: 180px;
+    margin-right: 20px;
+    align-items: center; 
+    justify-content: space-between;
+    flex-shrink: 0;
 }
