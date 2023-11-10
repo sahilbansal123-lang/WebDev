@@ -4,13 +4,12 @@ p {
     margin-bottom: 0;
 }
 
-.thumbnail {
-    width: 100%;
+body {
+    margin: 0;
 }
 
-.search-bar {
-    font-size: 20px;
-    display: block;
+.thumbnail {
+    width: 100%;
 }
 
 .video-title {
@@ -47,4 +46,33 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-bar {
+    font-size: 20px;
+    display: block;
+}
+
+.left-header {
+    background-color: lightblue;
+    width: 150px;
+}
+.middle-header {
+    margin-left: 60px;
+    margin-right: 35px;
+    background-color: lightpink;
+    flex: 1;
+    max-width: 500px;
+    
+}
+.right-header {
+    background-color: lightblue;
+    width: 200px;
 }
