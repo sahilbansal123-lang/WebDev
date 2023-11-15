@@ -1,7 +1,11 @@
-const a = 22;
+const a = 66;
 
-if (a >= 18) {
+if (a >= 18 & a < 60) {
   console.log("Yes you can vote");
-} else {
+} 
+else if(a >= 60) {
+    console.log("Now you can retire");
+} 
+else {
   console.log("No you can't vote");
 }
