@@ -1,10 +1,7 @@
-const a = 18;
-let vote;
+const a = 22;
 
 if (a >= 18) {
-  vote = true;
+  console.log("Yes you can vote");
 } else {
-  vote = false;
+  console.log("No you can't vote");
 }
-
-console.log(vote);
