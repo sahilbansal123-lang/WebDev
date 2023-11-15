@@ -1,7 +1,7 @@
 // LOGICAL OPERATOR
-//      AND both condititon should be true
-//      OR at least one condition will be true
-//      NOT
+//      AND -> both condititon should be true
+//      OR  -> at least one condition will be true
+//      NOT -> (True -> false) and (false -> true)
 
 // AND OPERATOR (&&) ->
 const age = 18;
