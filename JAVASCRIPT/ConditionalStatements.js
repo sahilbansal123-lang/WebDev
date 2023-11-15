@@ -32,6 +32,9 @@ switch (option) {
         break;
     case 4:
         console.log("bonjour");
+        break;
+    default:
+        console.log("Sorry")
 }
 
 
