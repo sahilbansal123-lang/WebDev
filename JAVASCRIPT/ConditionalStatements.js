@@ -1,3 +1,6 @@
+
+// if else
+
 const a = 6;
 
 if (a >= 18 & a < 60) {
@@ -12,5 +15,24 @@ if (a >= 18 & a < 60) {
 const age = 11;
 
 age >= 18 ? console.log("yes") : console.log("No");
+//      then                  else
+
+
+// SWITCH CASE STATEMENT
+const option = 4;
+switch (option) {
+    case 1:
+        console.log("Namaste")
+        break;
+    case 2: 
+        console.log("Hello")
+        break;
+    case 3: 
+        console.log("Kem cho")
+        break;
+    case 4:
+        console.log("bonjour");
+}
+
 
 
