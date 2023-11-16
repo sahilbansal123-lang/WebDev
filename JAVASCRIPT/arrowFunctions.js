@@ -28,3 +28,34 @@ const mul = (...numbers) => {
 
 let result = mul(1, 2, 3, 4, 5, 6);
 console.log(result);
+
+
+// HOISTING
+// 1. We cannot call function before defining it in case of arrow function
+// 2. but in case of normal function we can call function before defining it
+
+// sub(10, 20); // gives error
+const sub = (a, b) => {
+    return a-b;
+}
+console.log(sub(10, 20)); // works fine
+
+console.log(Multiply(10, 20)); // Both work fine properly
+function Multiply(a, b) {
+  let c = a * b;
+  return c;
+}
+console.log(Multiply(10, 20)); // both work fine
+
+
+// THIS KEYWORD
+const obj = {
+    key: 20,
+    myFunction: function () {
+        console.log("value is: "+ this.key);
+    }
+};
+
+obj.myFunction();
+
+
