@@ -5,3 +5,4 @@ student[3] = "Sahil Bansal";
 console.log(student[3]);
 student.push("alexa");
 student.pop();
+student.reverse();
