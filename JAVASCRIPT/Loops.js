@@ -27,9 +27,20 @@
 
 //  DO WHILE LOOP
 
-let ip = 50;
-let house = 50;
+// let ip = 50;
+// let house = 50;
+// do {
+//     ip = ip + 1;
+//     console.log("Step Taken " + ip)
+// } while (ip <= house);
+
+// GUESS THE NUMBER GAME
+let number = 40;
+let guess = 0;
 do {
-    ip = ip + 1;
-    console.log("Step Taken " + ip)
-} while (ip <= house);
+  guess = parseInt(prompt("Guess a number"));
+  if (guess == number) {
+    alert("winner");
+    break;
+  }
+} while (guess != 0);
