@@ -15,7 +15,7 @@
 
 // While LOOP
 
-let num = 1;
+// let num = 1;
 // while (num <= 10) {
 //   if (num % 2 == 0) {
 //     console.log(num, "-> Number is divisible by 2");
@@ -27,8 +27,9 @@ let num = 1;
 
 //  DO WHILE LOOP
 
+let ip = 50;
+let house = 50;
 do {
-  if (num <= 1) {
-    console.log("test");
-  }
-} while (num <= 10);
+    ip = ip + 1;
+    console.log("Step Taken " + ip)
+} while (ip <= house);
