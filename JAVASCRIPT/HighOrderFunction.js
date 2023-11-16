@@ -3,10 +3,15 @@
 function add(a, b, cb) {
   let result = a + b;
   cb(result);
+
+  return () => console.log(result);
 }
 
-add(10, 333, function (val) {
-  console.log(val);
-});
+let resultFunction = add(2, 4, () => {});
+resultFunction();
 
-add(10, 20, (res) => console.log(res)); // using arrow function
+// add(10, 333, function (val) {
+//   console.log(val);
+// });
+
+// add(10, 20, (res) => console.log(res)); // using arrow function
