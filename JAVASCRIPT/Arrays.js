@@ -1,4 +1,4 @@
-
+//      ARRAYS AND ITS INBUILT FUNCTIONS
 
 const student = ["sahil", "piyush", "john", "jane", "charu"];
 
@@ -14,4 +14,8 @@ function print(n) {
   console.log(n);
 }
 // Arrays HIGH ORDER FUNCTIONS
-student.forEach(print);
+student.forEach((val) => console.log(val));
+
+student.map((val) => console.log(val + " Bansal"));
+
+
