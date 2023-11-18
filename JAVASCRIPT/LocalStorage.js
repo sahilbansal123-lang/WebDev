@@ -11,4 +11,4 @@ button.addEventListener("click", () => {
 window.addEventListener("load", () => {
   const value = localStorage.getItem("name");
   username.innerText = value;
-});
+}); 
