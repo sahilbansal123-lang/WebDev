@@ -3,7 +3,12 @@ function showTime() {
   const time = `${currTime.getHours()}:${currTime.getMinutes()}:${currTime.getSeconds()}`;
   document.getElementById("time").innerText = time;
 }
-setInterval(showTime, 1000);
+let interval = setInterval(showTime, 1000);
+
+const button = document.getElementById("stop");
+button.addEventListener("click", () => {
+  clearInterval(interval);
+});
 
 // setTimeout(() => console.log("hi"), 2000); // SET timeout only run once
 
