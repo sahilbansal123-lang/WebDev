@@ -10,11 +10,10 @@ const App = () => {
   return (
     <div className="todo-container">
       <Header />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <TodoItem item="Eat" />
+      <TodoItem item="sleep" />
+      <TodoItem item="code" />
+      <TodoItem item="repeat" />
       <Button />
     </div>
   );
