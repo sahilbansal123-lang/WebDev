@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./components/Head.jsx";
+import TodoItem from "./components/TodoItem.jsx";
+import Button from "./components/Button.jsx";
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <Head />
+      <TodoItem />
+      <Button />
     </div>
   );
 };
