@@ -11,12 +11,15 @@ const App = () => {
   return (
     <div className="todo-container">
       <CounterComponent />
-      <Header />
+      <CounterComponent />
+      <CounterComponent />
+      <CounterComponent />
+      {/* <Header />
       <TodoItem item="Eat" />
       <TodoItem item="sleep" />
       <TodoItem item="code" />
       <TodoItem item="repeat" />
-      <Button />
+      <Button /> */}
     </div>
   );
 };
