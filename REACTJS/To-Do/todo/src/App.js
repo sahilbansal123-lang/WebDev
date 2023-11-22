@@ -11,9 +11,6 @@ const App = () => {
   return (
     <div className="todo-container">
       <CounterComponent />
-      <CounterComponent />
-      <CounterComponent />
-      <CounterComponent />
       {/* <Header />
       <TodoItem item="Eat" />
       <TodoItem item="sleep" />
