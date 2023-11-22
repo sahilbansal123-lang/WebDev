@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Header from "./components/Header.jsx";
 import TodoItem from "./components/TodoItem.jsx";
 import Button from "./components/Button.jsx";
 import CounterComponent from "./components/CounterComponent.jsx";
+import UUseEffect from "./components/UUseEffect.jsx";
 
 import "./style.css";
 
 const App = () => {
   return (
     <div className="todo-container">
-      <CounterComponent />
+      <UUseEffect />
       {/* <Header />
       <TodoItem item="Eat" />
       <TodoItem item="sleep" />
