@@ -8,19 +8,19 @@ body {
 .todo-container {
     width: 300px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
 }
 
 .todo-Header {
-    color: white;
+    color: black;
 }
 
 .Todo-Item {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: black;
 }
 
 .todo-item-text {
