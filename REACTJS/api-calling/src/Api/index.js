@@ -4,3 +4,11 @@ export const getPosts = async () => {
   });
   return response.json();
 };
+
+export const getUser = async () => {
+  const response = await fetch("https://randomuser.me/api/", {
+    method: "GET",
+  });
+
+  return await response.json();
+};
