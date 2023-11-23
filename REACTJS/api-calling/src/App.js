@@ -18,11 +18,14 @@ function App() {
     getUser().then((user) => setuserData(user.results[0]));
   }, []);
 
-  console.log(userData);
+  const refresh = () => {
+    getUser().then((user) => setuserData(user.results[0]));
+  };
 
   return (
     <div className="App">
       {userData && <UserCard data={userData} />}
+      <button onClick={refresh}>Refresh User</button>
       {/* {data ? (
         data.map((e) => <PostCard title={e.title} body={e.body} />)
       ) : (
