@@ -1,25 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react'
+import { ReactDOM } from 'react'
 
-// // Component
-// function HelloWorld() {
-//   return <h1> Hello World</h1>;
-// }
-
-// JSX
-function MyComponent() {
-  const name = "Sahil Bansal";
-  return <h2> Hello {userName()} </h2>;
+const index = () => {
+  return (
+    <div>index</div>
+  )
 }
 
-function userName() {
-  return user.firstName + " " + user.lastName;
-}
-
-let user = {
-  firstName: "sahil",
-  lastName: "Bansal",
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<MyComponent />);
+export default index
