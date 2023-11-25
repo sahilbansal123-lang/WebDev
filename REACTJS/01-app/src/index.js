@@ -1,10 +1,10 @@
-import React from 'react'
-import { ReactDOM } from 'react'
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Components/Heading";
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
-
-export default index
+ReactDOM.render(
+  <>
+    <Heading />
+  </>,
+  document.getElementById("root")
+);
