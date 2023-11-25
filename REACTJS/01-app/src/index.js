@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Heading from "./Components/Heading";
+import App from "./App";
 
 ReactDOM.render(
   <>
-    <Heading />
+    <App />
   </>,
   document.getElementById("root")
 );
