@@ -4,11 +4,11 @@ const Cards = (props) => {
   return (
     <div className="cards">
       <div className="card">
-        <img src="" alt="myPic" className="card__img" />
+        <img src={props.imgsrc} alt="myPic" className="card__img" />
         <div className="card__info">
-          <span className="card__category">A Netflix original Series</span>
+          <span className="card__category">{props.title}</span>
           <h3 className="card__title">{props.movieName}</h3>
-          <a href="" target="_blank">
+          <a href={props.link} target="_blank">
             <button>Watch Now</button>
           </a>
         </div>
