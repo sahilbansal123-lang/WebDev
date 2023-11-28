@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
-import SlotM from "./Components/SlotM";
 
 const App = () => {
+  const [Count, setCount] = useState(0);
+  const IncNum = () => {
+    setCount(Count + 1);
+  };
+
   return (
     <>
-      <h1 className="heading-style">
-        🎰 Welcome to
-        <span style={{ fontWeight: "bold" }}> Slot Machine Game</span> 🎰
-      </h1>
-      <SlotM />
+      <h1>{Count}</h1>
+      <button onClick={IncNum}>Click</button>
     </>
   );
 };
