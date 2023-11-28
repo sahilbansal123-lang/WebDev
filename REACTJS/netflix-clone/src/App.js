@@ -4,7 +4,7 @@ import "./index.css";
 import Sdata from "./SData";
 
 const App = () => {
-  function ncard(val) {
+  const ncard = (val) => {
     return (
       <Cards
         movieName={val.sname}
@@ -13,7 +13,7 @@ const App = () => {
         link={val.links}
       />
     );
-  }
+  };
 
   return (
     <>

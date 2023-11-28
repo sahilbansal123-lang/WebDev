@@ -1,13 +1,16 @@
 import React from "react";
-import Heading from "./Components/Heading";
-import Paragraph from "./Components/Paragraph";
+import "./index.css";
+import SlotM from "./Components/SlotM";
 
 const App = () => {
   return (
-    <div>
-      <Heading />
-      <Paragraph />
-    </div>
+    <>
+      <h1 className="heading-style">
+        🎰 Welcome to
+        <span style={{ fontWeight: "bold" }}> Slot Machine Game</span> 🎰
+      </h1>
+      <SlotM />
+    </>
   );
 };
 
