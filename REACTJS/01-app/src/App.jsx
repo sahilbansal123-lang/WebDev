@@ -33,8 +33,7 @@ const App = () => {
       <button onClick={time}>Get Time</button> */}
 
       {/* <h1>{Time}</h1> */}
-
-      <Events />
+      
     </>
   );
 };
