@@ -11,3 +11,18 @@
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
+
+div {
+    width: 100%;
+    height: 100vh;  
+    background-color: #8e44ad;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    border: solid;
+    justify-content: center;
+}
