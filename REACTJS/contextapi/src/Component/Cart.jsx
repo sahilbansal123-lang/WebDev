@@ -1,8 +1,8 @@
-import React, { useContext, useReducer } from "react";
-import { CartContext } from "../Context/Cart";
+import React from "react";
+import { useCart } from "../Context/Cart";
 
 const Cart = () => {
-  const cart = useContext(CartContext);
+  const cart = useCart();
   const total = cart.item.reduce((a, b) => a + b.price, 0);
   return (
     <div className="cart">
