@@ -1,13 +1,18 @@
 import React from "react";
+import { useWheather } from "../Context/Wheather";
 
-const Input = (props) => {
+const Input = () => {
+  const Wheather = useWheather();
+
   return (
     <div>
       <input
         className="input"
-        placeholder={props.placeholder}
-        value={props.value}
-        onChange={props.onChange}
+        placeholder="Search Here"
+        value={Wheather.searchCity}
+        onChange={(e) => {
+          Wheather.setSearchCity(e.target.value);
+        }}
       />
     </div>
   );
