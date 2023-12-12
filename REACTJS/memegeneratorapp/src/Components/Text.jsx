@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import Draggable from "react-draggable";
 
 const Text = () => {
-  return <h1>I am a Text</h1>;
+  const [editMode, setEditMode] = useState(false);
+  const [val, setVal] = useState("Double click to edit");
+  return (
+    // <Draggable>
+    <Draggable>
+      {editMode ? (
+        <input
+          onDoubleClick={(e) => setEditMode(false)}
+          value={val}
+          onChange={(e) => setVal(e.target.value)}
+        />
+      ) : (
+        <h1 onDoubleClick={(e) => setEditMode(true)}>{val}</h1>
+      )}
+    </Draggable>
+    /* </Draggable> */
+  );
 };
 
 export default Text;
